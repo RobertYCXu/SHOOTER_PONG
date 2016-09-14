@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PONG</title>
+	<script type="text/javascript" src="assets/js/lib/jquery-3.1.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<script type="text/paperscript" src = "assets/js/javaScript.js" canvas="canvas"></script>
+	<script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+	<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0/howler.core.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/pong.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Orbitron" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>Shooter Pong</h1>
+<div id="stripe">
+	<div class="container">
+		<div class="row">
+			<button id="reset" class="reset col-lg-2 col-sm-2 default">Reset</button>
+			<span class="col-lg-6 col-sm-6"></span>
+			<button id="easy" class="mode col-lg-2 default selectedDef">Easy</button>
+			<button id="hard" class="mode col-lg-2 col-sm-2 default" >Hard</button>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class = "row">
+		<div  class="col-lg-4">
+			<h1 id="computer" class="score">
+				0
+			</h1>
+			<h2>Computer</h2>
+		</div>
+		<div id="canvasholder" class="col-lg-4">
+			<button class="start default">Start</button>
+			<canvas id="canvas" resize="true"></canvas>
+		</div>
+		<div class="col-lg-4">
+			<h1 id="player" class="score">
+				0
+			</h1>
+			<h2>Player</h2>
+		</div>
+		
+	</div>
+	<div class="row">
+		<span class="col-lg-4"></span>
+		<div class="col-lg-4">
+			<h3>
+				<ul>
+					<li>Mouse to move, P to pause</li>
+					<li>10 points to win</li>
+				</ul>
+			</h3>
+		</div>
+		<span class="col-lg-4"></span>
+	</div>
+</div>
+<script type="text/javascript" src="assets/js/pong.js"></script>
+</body>
+</html>

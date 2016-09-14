@@ -1,0 +1,179 @@
+body, html{
+	margin:0;
+	height:100%;
+	font-family: 'Bungee Shade', cursive;
+	background-color: #232323;
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	color: white;
+	background-color: Steelblue;
+	line-height: 1.1;
+	font-size: 800%;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	letter-spacing: 10px;
+	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+}
+
+#stripe{
+	background: white;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 900;
+	font-size: 120%;
+	letter-spacing: 1px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline: none;
+
+}
+
+
+
+.mode, .reset{
+	height:43px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-radius: 6px;
+}
+
+.score{
+	background-color: #232323;
+	font-size: 1600%;
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	padding-top: 80px;
+
+	
+}
+h2{
+	font-size: 200%;
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+
+}
+
+
+#canvasholder{
+	max-width: 400px;
+ 	height:400px;
+ 	margin: 40px auto;
+ 	z-index: 0;
+ 	
+ 	
+}
+canvas{
+ 	width:100%;
+ 	height:100%;
+ 	background-color: Steelblue;
+ 	border: 9px solid white;
+ 	cursor:none;
+ 	border-radius: 15px;
+ 	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+ 	
+}
+.start{
+	z-index: 10;
+	height:50px;
+	width: 100px;
+	position: absolute;
+	top:45%;
+	left:37%;
+	border-radius: 10px;
+}
+
+
+.default{
+	background: white;
+	color: Steelblue;
+}
+
+.default:hover{
+	background:Steelblue;
+	color:white;
+}
+
+.lost{
+	background: white;
+	color: purple;
+}
+
+.lost:hover{
+	background:purple;
+	color:white;
+}
+
+
+
+.won:hover{
+	background:orange;
+	color:white;
+}
+
+.won{
+	background: white;
+	color: orange;
+
+}
+
+li{
+	font-size: 100%;
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right:10px;
+	list-style-type: none;
+	margin: 0 0 15px 0;
+	transition:  all 0.5s;
+	-webkit-transition: all  0.5s;
+	-moz-transition: all  0.5s;
+	
+}
+ul{
+	
+	margin:0;
+	padding:10px;
+
+}
+h3{
+	background-color: black;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: 9px solid white;
+	border-radius: 15px;
+	margin:0px;
+ 	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+}
+
+.selectedDef{
+	color: white;
+	background: steelblue;
+}
+.selectedWon{
+	color: white;
+	background: orange;
+}
+.selectedLost{
+	color: white;
+	background: purple;
+}
