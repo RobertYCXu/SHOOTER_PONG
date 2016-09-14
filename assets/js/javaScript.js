@@ -20,7 +20,7 @@ var playerScore = 0;
 var secondLi = $("li").eq(1);
 var modePressedOn = "default";
 var easyPressed = true;
-var winScore = 1;
+var winScore = 10;
 var bullets = [];
 // initializing sounds
 var loser = new Howl({
