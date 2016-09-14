@@ -7,3 +7,5 @@ NOTE: Since most browsers don't support cross origin resource resource sharing, 
 
 
 ![Alt text](/Screenshots/screenshot1.png?raw=true "Game Layout")
+
+![Alt text](/Screenshots/screenshot2.png?raw=true "You Lost Layout")
