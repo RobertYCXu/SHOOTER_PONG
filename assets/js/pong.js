@@ -8,7 +8,6 @@
 var canvas = document.querySelector("canvas");
 fitToContainer(canvas);
 function fitToContainer(canvas){
-	
 	canvas.width = canvas.offsetWidth;
 	canvas.height = canvas.offsetHeight;
 }
