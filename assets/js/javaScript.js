@@ -1,5 +1,4 @@
 
-
 /*SETTING ALL VARIABLES*******************
 ******************************************
 ******************************************
@@ -7,6 +6,12 @@
 
 // boundaries
 var canvas = document.querySelector("canvas");
+fitToContainer(canvas);
+function fitToContainer(canvas){
+	
+	canvas.width = canvas.offsetWidth;
+	canvas.height = canvas.offsetHeight;
+}
 var boundX = canvas.width;
 var boundY = canvas.height;
 // initializing params
@@ -52,6 +57,9 @@ var win = new Howl({
 var pad1 = new Path.RoundRectangle(new Rectangle(new Point(180,20), new Point(225,27)), new Size(5,5));
 pad1.fillColor = "#232323";
 pad1.position.x = boundX/2;
+console.log(pad1.position.x);
+console.log(boundX);
+console.log(boundX/2);
 pad1.position.y = boundY/15;
 
 
@@ -409,6 +417,8 @@ function removeClasses(mode){
 	$(mode).removeClass("selectedWon");
 	$(mode).removeClass("selectedLost");
 }
+
+
 
 
 
