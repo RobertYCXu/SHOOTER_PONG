@@ -94,7 +94,6 @@ function generateBullet(){
 		var bullet = new Path.Circle(new Point(pad1.position.x, pad1.position.y), 7);
 		bullet.fillColor = '#232323';
 		bullets.push(bullet);
-		
 		console.log(pad2.bounds.width)
 	}setTimeout(generateBullet, 3000);
 }
@@ -105,7 +104,8 @@ function shoot(){
 		bullets[i].position.y+= 5;
 		if(bullets[i].position.y >= pad2.position.y -10 && bullets[i].position.y < pad2.position.y && (bullets[i].position.x > pad2.bounds.x && bullets[i].position.x < pad2.bounds.x +pad2.bounds.width) ){
 			bloop.play();
-			pad2.bounds.width -= 5;
+			if (pad2.bounds.width < 6) pad2.bounds.width = 0.01;
+			else pad2.bounds.width -= 5;
 		}
 
 	}	
@@ -284,7 +284,7 @@ $("#hard").on("click", function(){
 
 // CHECK IF GAME OVER
 function checkEndGame(){
-	if(comScore === winScore || pad2.bounds.width ===0){
+	if(comScore === winScore || pad2.bounds.width < 0.1){
 		$("canvas").css('background-color','purple');
 		$("h1:first").css('background-color', 'purple');
 		$("button").removeClass("default");
@@ -302,7 +302,7 @@ function checkEndGame(){
 		hideBall();
 		modeColorChanger();
 	}
-	if(playerScore === winScore|| pad1.bounds.width ===0){
+	if(playerScore === winScore|| pad1.bounds.width < 0.1){
 		$("canvas").css('background-color','orange');
 		$("h1:first").css('background-color', 'orange');
 		$("button").removeClass("default");
